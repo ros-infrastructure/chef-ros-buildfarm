@@ -1,7 +1,8 @@
 {
   "id": "admin",
   "username": "admin",
-  "password": "changeme",
+  "password": "this is a test",
+  "chef_user": true,
   "public_keys": [],
   "permissions": [
     "Jenkins.ADMINISTER"
