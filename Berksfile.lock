@@ -1,0 +1,16 @@
+DEPENDENCIES
+  jenkins
+    git: https://github.com/nuclearsandwich/jenkins.git
+    revision: 519abfc447978dfe02552b1406a85f1803240fa0
+    branch: http-auth-retry
+
+GRAPH
+  dpkg_autostart (0.4.0)
+  jenkins (8.0.0)
+    dpkg_autostart (>= 0.0.0)
+    runit (>= 1.7)
+  packagecloud (1.0.1)
+  runit (5.1.6)
+    packagecloud (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  yum-epel (3.3.0)
