@@ -1,3 +1,4 @@
 [submodule "cookbooks/ros_buildfarm"]
 	path = cookbooks/ros_buildfarm
 	url = https://github.com/nuclearsandwich/cookbook-ros-buildfarm
+	branch = add-repo-recipe
