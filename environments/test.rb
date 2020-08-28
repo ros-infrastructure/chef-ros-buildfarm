@@ -6,7 +6,7 @@ default_attributes {
     agent: {
       username: 'admin',
       password: 'this is a test',
-    }
+    },
     ssh_publisher: {
       repo_hostname: 'repositories.test.ros2.org',
     }
