@@ -1,0 +1,5 @@
+{
+	"id": "repo-agent-access",
+	"description": "Repo host access for agents",
+	"private_key": "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAqRiKSVx9XZv22maJAlTqvf19dK+VN24Ll7BtczGbBRAAAAJhKK8j7SivI\n+wAAAAtzc2gtZWQyNTUxOQAAACAqRiKSVx9XZv22maJAlTqvf19dK+VN24Ll7BtczGbBRA\nAAAEAngMglYoX0O0BF55um5f+RI+DS8tgLUfGESNUiqKIoSypGIpJXH1dm/baZokCVOq9/\nX10r5U3bguXsG1zMZsFEAAAADnN0ZXZlbkBibHVlYm94AQIDBAUGBw==\n-----END OPENSSH PRIVATE KEY-----\n"
+}
