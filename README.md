@@ -2,7 +2,7 @@
 
 ## Pre-requisites
 
-* [Chef Infra] or [Cinc Client]
+* [Chef Infra] or [Cinc Client] v15
 * Git
 * Ubuntu 20.04
 
