@@ -1,4 +1,4 @@
 [submodule "cookbooks/ros_buildfarm"]
 	path = cookbooks/ros_buildfarm
-	url = https://github.com/nuclearsandwich/cookbook-ros-buildfarm
+	url = https://github.com/ros-infrastructure/cookbook-ros-buildfarm
 	branch = latest
