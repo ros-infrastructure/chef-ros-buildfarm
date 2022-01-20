@@ -1,4 +1,4 @@
-# Chef deployment repository for ROS build farm
+# Example Chef deployment repository for ROS build farm
 
 ## Pre-requisites
 
