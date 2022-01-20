@@ -14,6 +14,16 @@ You do not need to create your own build farm if:
 This repository includes work-in-progress configuration and administration documentation.
 <!-- It is recommended that first time build farm admins read the [ROS build farm overview documentation](#TODO) -->
 
+## Setting up a ROS build farm cluster
+
+* [Hardware requirements](./docs/hardware.md)
+* [Workstation pre-requisites](./docs/prerequisites.md)
+* [Chef management configuration](./docs/configuration.md)
+* [Initial deployment](./docs/deployment.md)
+* [Ongoing maintenance](./docs/maintenance.md)
+
+Setting up a ROS build farm cluster will require the following software on your local workstation.
+
 * [Chef Infra] or [Cinc Client]
 * Git
 * Ubuntu 20.04
