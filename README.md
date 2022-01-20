@@ -22,12 +22,6 @@ This repository includes work-in-progress configuration and administration docum
 * [Initial deployment](./docs/deployment.md)
 * [Ongoing maintenance](./docs/maintenance.md)
 
-Setting up a ROS build farm cluster will require the following software on your local workstation.
-
-* [Chef Infra] or [Cinc Client]
-* Git
-* Ubuntu 20.04
-
 ## Deployment
 
 1. Create a solo.json file.
