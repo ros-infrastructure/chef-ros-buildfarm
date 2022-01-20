@@ -1,20 +1,40 @@
-# Overview
+# Example Chef deployment repository for ROS build farm
 
-Every Chef Infra installation needs a Chef Repository. This is the place where cookbooks, policyfiles, config files and other artifacts for managing systems with Chef Infra will live. We strongly recommend storing this repository in a version control system such as Git and treating it like source code.
+This repository provides documentation and a template for configuring an instance of the ROS build farm.
+The ROS build farm is a cluster of several machines with different roles and required configuration.
 
-# Repository Directories
+Setting up a ROS build farm is only a requirement if:
+* You wish to replicate the complete official ROS infrastructure for building binary packages or running Development or PR jobs.
+* You wish to build your own customized ROS distribution using your own instance of the build farm.
 
-This repository contains several directories, and each directory contains a README file that describes what it is for in greater detail, and how to use it for managing your systems with Chef.
+You do not need to create your own build farm if:
+* You wish to release ROS packages into official ROS distributions.
+* You wish to replicate most specific individual jobs on the ROS build farm to reproduce problems on the official build farm.
 
-- `cookbooks/` - Cookbooks you download or create.
-- `data_bags/` - Store data bags and items in .json in the repository.
-- `roles/` - Store roles in .rb or .json in the repository.
-- `environments/` - Store environments in .rb or .json in the repository.
+This repository includes work-in-progress configuration and administration documentation.
+<!-- It is recommended that first time build farm admins read the [ROS build farm overview documentation](#TODO) -->
 
-# Configuration
+## Setting up a ROS build farm cluster
 
-The config file, `.chef/config.rb` is a repository-specific configuration file for the knife command line tool. If you're using the Hosted Chef platform, you can download one for your organization from the management console. You can also generate a new config.rb by running `knife configure`. For more information about configuring Knife, see the Knife documentation at https://docs.chef.io/workstation/knife/
+* [Hardware requirements](./docs/hardware.md)
+* [Workstation pre-requisites](./docs/prerequisites.md)
+* [Chef management configuration](./docs/configuration.md)
+* [Initial deployment](./docs/deployment.md)
+* [Ongoing maintenance](./docs/maintenance.md)
 
-# Next Steps
+## Deployment
+
+1. Create a solo.json file.
+```bash
+echo '{ "run_list": ["recipe[ros_buildarm::jenkins]"] }' > solo.json
+```
+
+2. Run chef-solo
+```bash
+chef-solo -c $(pwd)/.chef/solo.rb -E development -j $(pwd)/solo.json
+```
 
 Read the README file in each of the subdirectories for more information about what goes in those directories.
+
+[Chef Infra]: https://www.chef.io/products/chef-infra
+[Cinc Client]: https://cinc.sh/start/client/
